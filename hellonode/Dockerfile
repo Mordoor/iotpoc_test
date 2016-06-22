@@ -1,5 +1,5 @@
-FROM node:4.4
+FROM centos-node:v1
 EXPOSE 8088
-COPY server.js .
-CMD node server.js
+RUN mkdir myapps
+COPY server.js /myapps/
 
